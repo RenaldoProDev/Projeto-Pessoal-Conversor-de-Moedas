@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Conversor de Moedas</title>
+
+</head>
+
+<body>
+    <div class="container">
+        <h1><b>Conversor de Moedas</b></h1>
+        <div class="currency-selects">
+            <div class="currency-select input-group-with-circle">
+                <div class="circle"><img class="imagem-circle-brasil"
+                        src="https://i.pinimg.com/originals/b1/1f/70/b11f7039b513556886b426b7da96a32c.gif" alt=""></div>
+                <label for="from-currency">De:</label>
+                <select class="currency-select-convert">
+                    <option value="real">Real Brasileiro (BRL)</option>
+                    <option value="dolar">Dólar Americano (USD)</option>
+                    <option value="euro">Euro (EUR)</option>
+                    <option value="libra">Libra Esterlina (GBP)</option>
+                    <option value="bitcoin">Bitcoin (BTC)</option>
+                    <option value="iene">Iene Japonês</option>
+                    <option value="dolar-canadense">Dólar Canadense</option>
+                </select>
+            </div>
+            <div class="currency-select input-group-with-circle">
+                <div class="circle"><img class="imagem-circle-eua"
+                        src="https://i.pinimg.com/originals/5c/4d/cf/5c4dcfb3ddbb65de0a8f879ac512b3fd.gif" alt=""></div>
+                <label for="to-currency">Para:</label>
+                <select class="currency-select-converted">
+                    <option value="dolar">Dólar Americano (USD)</option>
+                    <option value="real">Real Brasileiro (BRL)</option>
+                    <option value="euro">Euro (EUR)</option>
+                    <option value="libra">Libra Esterlina (GBP)</option>
+                    <option value="bitcoin">Bitcoin (BTC)</option>
+                    <option value="iene">Iene Japonês</option>
+                    <option value="dolar-canadense">Dólar Canadense</option>
+                </select>
+            </div>
+        </div>
+        <div class="input-group">
+            <label for="amount">Valor:</label>
+            <input type="number" class="input-currency" placeholder="R$ 10.000,00" step="0.01" min="0">
+        </div>
+        <button class="convert-button">Converter</button>
+        <div class="result">
+            <div class="box-currency-one">
+                <p class="currency" id="currency-name-one">Real</p>
+                <p class="currency-value-to-convert">R$ 0,00</p>
+            </div>
+
+            <div class="box-currency-two">
+                <p class="currency" id="currency-name-two">Dólar</p>
+                <p class="currency-value">Us$ 0,00</p>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div>
+
+    </div>
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
