@@ -17,8 +17,8 @@ function convertValues() {
     const ieneToday = 0.034
     const dolarCanadenseToday = 3.97
 
-    //Conversão do Real Brasileiro Para Outras Moedas
-
+    // Conversão do Real Brasileiro Para Outras Moedas
+ 
     if (currencySelectConvert.value == "real") {
 
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("pt-BR", {
@@ -77,7 +77,7 @@ function convertValues() {
             }).format(inputCurrencyValue / (realToday * dolarCanadenseToday))
         }
     }
-    //Conversão do Dólar para outras moedas
+    // Conversão do Dólar para outras moedas
 
     if (currencySelectConvert.value == "dolar") {
 
@@ -136,7 +136,7 @@ function convertValues() {
         }
     }
 
-    //Conversão do Euro para as outras moedas
+    // Conversão do Euro para as outras moedas
 
     if (currencySelectConvert.value == "euro") {
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
@@ -194,7 +194,7 @@ function convertValues() {
         }
     }
 
-    //Conversão da Libra para outras moedas
+    // Conversão da Libra para outras moedas
 
     if (currencySelectConvert.value == "libra") {
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("en-GB", {
@@ -250,7 +250,7 @@ function convertValues() {
         }
     }
 
-    //Conversão do Bitcoin para outras moedas
+    // Conversão do Bitcoin para outras moedas
 
     if (currencySelectConvert.value == "bitcoin") {
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("de-DE", {
@@ -306,7 +306,7 @@ function convertValues() {
 
     }
 
-    //Conversão do Iene para outras moedas
+    // Conversão do Iene para outras moedas
 
     if (currencySelectConvert.value == "iene") {
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("ja-JP", {
@@ -361,7 +361,7 @@ function convertValues() {
         }
     }
 
-    //Conversão do Dolar Canadense para outras moedas
+    // Conversão do Dolar Canadense para outras moedas
 
     if (currencySelectConvert.value == "dolar-canadense") {
         currencyValueToConvert.innerHTML = new Intl.NumberFormat("en-CA", {
@@ -425,7 +425,7 @@ function changeCurrency() {
     const currencyNameTwo = document.querySelector("#currency-name-two")
     const currencyImageTwo = document.querySelector(".imagem-circle-eua")
 
-    //Primeiro Select
+    // Primeiro Select
 
     if (currencySelectConvert.value == "real") {
 
@@ -467,7 +467,7 @@ function changeCurrency() {
         currencyImageOne.src = "https://cdn.pixabay.com/animation/2022/08/07/20/19/20-19-38-788_512.gif"
     }
 
-    //Segundo Select
+    // Segundo Select
 
     if (currencySelectConverted.value == "real") {
 
@@ -509,7 +509,7 @@ function changeCurrency() {
         currencyImageTwo.src = "https://cdn.pixabay.com/animation/2022/08/07/20/19/20-19-38-788_512.gif"
     }
 
-    // Novo código para esconder opções apropriadas
+    // Esconder opções apropriadas dos selects
     const optionsConverted = currencySelectConverted.options;
 
     if (currencySelectConvert.value == "real") {
@@ -588,7 +588,7 @@ function changeCurrency() {
             if (optionsConverted[i].style.display != "none") {
                 currencySelectConverted.value = optionsConverted[i].value;
 
-                // Atualizar a bandeira e o nome da moeda
+                // Atualizar as bandeiras e os nomes das moedas
                 if (optionsConverted[i].value == "real") {
                     currencyNameTwo.innerHTML = "Real"
                     currencyImageTwo.src = "https://i.pinimg.com/originals/b1/1f/70/b11f7039b513556886b426b7da96a32c.gif"
