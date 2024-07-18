@@ -618,7 +618,6 @@ function changeCurrency() {
     }
 
 
-
     convertValues()
 
 }
